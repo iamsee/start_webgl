@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web IDE</title>
+  <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <script src="vendor/codemirror/lib/codemirror.js"></script>
+  <script src="vendor/codemirror/mode/xml/xml.js"></script>
+  <script src="vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="vendor/codemirror/mode/css/css.js"></script>
+  <script src="vendor/codemirror/mode/javascript/javascript.js"></script>
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+<!--<header class="header">-->
+<!--  <button id="run-btn">运行</button>-->
+<!--</header>-->
+<div class="container">
+  <div class="code-wrap">
+    <div class="code">
+        <div class="panel">
+            <h2 class="panel__title">JavaScript</h2>
+            <textarea id="js">
+function ready(){
+}
+            </textarea>
+        </div>
+        <div class="panel">
+            <h2 class="panel__title">HTML</h2>
+            <textarea id="html">
+<body onload="ready()">
+    <canvas id="example" width="600" height="600" >浏览器不支持canvas</canvas>
+</body>
+            </textarea>
+        </div>
+        <div class="panel">
+            <h2 class="panel__title">CSS</h2>
+            <textarea id="css">
+html,body{
+    width:100%;height:100%;
+}
+            </textarea>
+        </div>
+
+    </div>
+  </div>
+  <div class="res">
+    <h2 class="panel__title">输出结果</h2>
+    <iframe  frameborder="0" id="preview">
+      <body>
+      <div class="result">xxx</div>
+      </body>
+    </iframe>
+  </div>
+
+
+</div>
+
+  <script src="vendor/jquery.min.js"></script>
+  <script src="assets/js/index.js"></script>
+
+
+</body>
+
+</html>
