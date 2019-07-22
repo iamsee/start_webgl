@@ -33,6 +33,12 @@ $(document).ready(function () {
     htmlEditor.on('change',(e) => {
        run()
     })
+    jsEditor.on('change',(e) => {
+        run()
+    })
+    cssEditor.on('change',(e) => {
+        run()
+    })
 
 
     function run() {
